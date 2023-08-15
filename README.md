@@ -14,7 +14,7 @@ $$P(x_t|x_{t-1},x_{t-2},x_{t-3})\ =\
 \frac{1}{\sqrt{2\pi}}\exp\left[-\frac{1}{2}\biggl(
   x_t - a_1 x_{t-1} - a_2 x_{t-2} - a_3 x_{t-3}\biggr)^2\right]$$
 
-and the sum is over business days in the year 2000 (starting from the fourth day). The linear coefficients $(a_1,\!a_2,\!a_3)$ should be such that the log-likelihood  ${\cal L}$ is maximized.
+and the sum is over business days in the year 2000 (starting from the fourth day). The linear coefficients $(a_1,\ a_2,\ a_3)$ should be such that the log-likelihood  ${\cal L}$ is maximized.
 
 In the code, the following equations are used to compute the linear coefficients that maximize ${\cal L}$
 $${\cal L} = \sum_t \log P(x_t|x_{t-1},x_{t-2},x_{t-3})$$
